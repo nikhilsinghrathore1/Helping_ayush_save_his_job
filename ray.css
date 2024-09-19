@@ -1,0 +1,138 @@
+@font-face {
+               font-family: gilroy;
+               src: url(/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+               font-family: kill;
+               src: url(/fonts/Kajiro\ Bold.ttf);
+}
+
+
+*{
+               margin: 0;
+               padding: 0;
+               font-family: gilroy;
+               box-sizing: border-box;
+}
+html,body{
+               height: 100%;
+               width: 100%;
+}
+
+#main{
+               width: 100%;
+               position: relative;
+               height: 100vh;          
+}
+#back{
+               width: 100%;
+               height: 100vh;
+}
+#back  img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+}
+#workSpace{
+               position: relative;
+               width: 80%;
+               height: 100vh;
+            
+               margin: auto;
+}
+#nav{
+               display: flex;align-items: center;justify-content: space-between;
+               width: 100%;
+               padding: 1vw 0;
+         
+}
+#top{
+               position: absolute;
+               pointer-events: none;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100vh;
+}
+#navlft,#navright{
+               display: flex;align-items: center;
+               gap: 50px;
+}
+#navlft img{
+               height: 50px;
+}
+a{
+               color: #fff;
+               text-decoration: none;
+               pointer-events: all;
+               font-weight: 500;
+               text-transform: uppercase;
+               font-size:0.89vw;
+}
+
+#hero{
+               position: absolute;
+               top: 50%;
+               left: 0;
+               padding-top: 5vw;
+               display: flex;justify-content: space-between;
+               transform: translate(0,-50%);
+               width: 100%;
+}
+#left{
+               width: 50%;
+}
+#right{
+               width: 18%;
+             color: #fff;
+}
+
+.elem{
+               width: 100%;
+               margin-bottom: 1vw;
+               position: relative;
+               overflow: hidden;
+               height: 130px;
+             
+}
+.elem h1{
+               line-height: 0.9;
+               font-family: kill;
+               color:#fff;
+               font-weight: 100;
+
+               position: absolute;
+               top: 100%;
+               text-transform: uppercase;
+               font-size: 11vw;
+}
+.elem h1:nth-child(1){
+               top :0;
+}
+button{
+               padding: 1vw 3vw;
+               margin-top: 2vw;
+               letter-spacing: 2px;
+               text-transform: uppercase;
+               font-size: 2.5vw;
+               font-family: kill;
+               pointer-events: all;
+}
+#right img{
+               width: 100%;
+               border-radius: 4px;
+               height: 250px;
+               object-position: center;
+               margin: 1vw 0;
+               object-fit: cover;
+}
+#right{
+               text-align: end;
+               font-size: 14px;
+}
+#right p{
+               line-height: 1.3;
+}
+#right p:nth-child(3){
+               margin-bottom: 3vw;
+}
